@@ -3,7 +3,7 @@
 
 //#define DEBUG_OWS   
 //#define DEBUG_DISCRETEWRENCHSPACE 
-#define DEBUG_QHULL 
+//#define DEBUG_QHULL 
 //#define DEBUG_OBJECT_LOADER
 
 #endif
