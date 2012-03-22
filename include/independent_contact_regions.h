@@ -32,7 +32,6 @@ class IndependentContactRegions
   bool primitiveSearchZoneInclusionTest(PrimitiveSearchZone* prim_sz,WrenchCone const* wc)const;
   bool searchZoneInclusionTest(uint region_id,Patch const* patch)const;
   void computeContactRegion(uint region_id);
-  void clear();
 
  public:
   IndependentContactRegions();
@@ -44,6 +43,7 @@ class IndependentContactRegions
   friend std::ostream& operator<<(std::ostream& stream, IndependentContactRegions const& icr);
   ~IndependentContactRegions();
 
+  void clear();
   void computeICR();
   bool icrComputed()const;
   ContactRegion const* getContactRegion(uint id)const;
